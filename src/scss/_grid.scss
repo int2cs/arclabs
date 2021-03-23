@@ -31,10 +31,74 @@
 }
 
 #projectGrid {
-    width: 100%;
-    height: 150px;
-    background-color: aqua;
+    display: grid;
+    width: 90%;
+    height: 150vh;
+    margin: 0 5%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2.2fr 1fr 1.2fr 1.8fr;
+    grid-template-areas: 
+    'NY1'
+    'SIN'
+    'PAR'
+    'NY2';
+    gap: 8px;
     @include md {
-        background-color: salmon;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1.2fr;
+        grid-template-areas: 
+        'NY1 SIN SIN'
+        'PAR PAR NY2';
+
+        .project {
+            .card {
+                width: 100%;
+            }
+            &:nth-child(even) {
+                .card {
+                    width: 50%;
+                }
+            }
+        }
+    }
+    > div {
+        position: relative;
+        border-radius: 10px 0 10px 10px;
+    }
+    #NY1 {
+        grid-area: NY1;
+        background: url("/src/img/p1.png") center/cover;
+    }
+    #NY2 {
+        grid-area: NY2;
+        background: url("/src/img/p4.png") center/cover;
+    }
+    #SIN {
+        grid-area: SIN;
+        background: url("/src/img/p2.png") center/cover;
+    }
+    #PAR {
+        grid-area: PAR;
+        background: url("/src/img/p3.png") center/cover;
+    }
+    .card {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 85%;
+        height: 14vh;
+        background-color: white;
+
+        h3 {
+            font-family: 'RobotoCondensed';
+            color: $color2;
+            padding: 3vh 0 0 3vh;
+        }
+
+        p {
+            font-family: 'RobotoLight';
+            color: $color2;
+            padding: 10px 0 0 3vh;
+        }
     }
 }
