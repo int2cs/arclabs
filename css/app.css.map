@@ -4,7 +4,8 @@
     "sources": [
         "../src/scss/app.scss",
         "../src/scss/_reset.scss",
-        "../src/scss/_style.scss"
+        "../src/scss/_style.scss",
+        "../src/scss/_grid.scss"
     ],
     "names": [],
     "file": "app.css"
