@@ -9,17 +9,12 @@ a {
   color: inherit;
 }
 
-.btn {
-  padding: 0.5em 1.5em;
-  border: 1px solid white;
-}
-
 ul {
   list-style-type: none;
 }
 
 section {
-  margin: 50px 0;
+  padding: 50px 10px;
 }
 
 @font-face {
@@ -66,6 +61,12 @@ section {
   margin: 1em 0;
 }
 
+#vh .vh_content a {
+  padding: 0.5em 1.5em;
+  border: 1px solid white;
+  text-transform: capitalize;
+}
+
 #vh .reseaux {
   position: absolute;
   bottom: 30px;
@@ -88,13 +89,55 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 80%;
+  margin: 50px auto;
 }
 
 #section1 .card img {
   width: 150px;
   height: 150px;
   padding: 30px;
-  border: 1px solid grey;
+  border: 2px solid #f1f1f1;
+}
+
+#section1 .card h3 {
+  font-family: RobotoCondensedLight;
+  margin: 1em 0;
+  text-transform: capitalize;
+}
+
+#section1 .card p {
+  font-family: RobotoCondensed;
+  color: grey;
+  line-height: 2em;
+  text-align: center;
+}
+
+#section2 {
+  background: #f1f1f1;
+}
+
+#section2 img {
+  display: block;
+  width: 95%;
+  margin: 0 auto 40px auto;
+}
+
+#section2 h3 {
+  color: #cea06c;
+  margin: 1em 0;
+}
+
+#section2 p {
+  line-height: 1.8em;
+  color: grey;
+  margin-bottom: 50px;
+}
+
+#section2 a {
+  padding: 0.5em 1.5em;
+  border: 1px solid #cea06c;
+  text-transform: capitalize;
 }
 
 * {

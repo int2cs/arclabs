@@ -24,6 +24,9 @@
     h1 {
       margin: 1em 0;
     }
+    a {
+      @include btn(white);
+    }
   }
 
   .reseaux {
@@ -50,12 +53,49 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 80%;
+    margin: 50px auto;
 
     img {
       width: 150px;
       height: 150px;
       padding: 30px;
-      border: 1px solid grey;
+      border: 2px solid $color-lightgrey;
     }
+
+    h3 {
+      font-family: RobotoCondensedLight;
+      margin: 1em 0;
+      text-transform: capitalize;
+    }
+
+    p {
+      font-family: RobotoCondensed;
+      color: $color-grey;
+      line-height: 2em;
+      text-align: center;
+    }
+  }
+}
+
+#section2 {
+  background: $color-lightgrey;
+
+  img {
+    display: block;
+    width: 95%;
+    margin: 0 auto 40px auto;
+  }
+  h3 {
+    color: $color1;
+    margin: 1em 0;
+  }
+  p {
+    line-height: 1.8em;
+    color: $color-grey;
+    margin-bottom: 50px;
+  }
+  a {
+    @include btn($color1);
   }
 }
