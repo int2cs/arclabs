@@ -23,6 +23,21 @@ section {
   margin: 50px 0;
 }
 
+@font-face {
+  font-family: "RobotoLight";
+  src: url("/src/font/Roboto-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "RobotoCondensedLight";
+  src: url("/src/font/RobotoCondensed-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "RobotoCondensed";
+  src: url("/src/font/RobotoCondensed-Regular.ttf") format("truetype");
+}
+
 #vh {
   position: relative;
   height: 100vh;
@@ -109,21 +124,6 @@ section {
   height: 150px;
   padding: 30px;
   border: 1px solid grey;
-}
-
-@font-face {
-  font-family: "RobotoLight";
-  src: url("/src/font/Roboto-Light.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "RobotoCondensedLight";
-  src: url("/src/font/RobotoCondensed-Light.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "RobotoCondensed";
-  src: url("/src/font/RobotoCondensed-Regular.ttf") format("truetype");
 }
 
 * {

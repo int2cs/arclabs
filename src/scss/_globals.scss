@@ -9,3 +9,21 @@ ul {
 section {
   margin: 50px 0;
 }
+
+$color1: #cea06c;
+$color2: #314356;
+
+@font-face {
+    font-family: "RobotoLight";
+    src: url("/src/font/Roboto-Light.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "RobotoCondensedLight";
+    src: url("/src/font/RobotoCondensed-Light.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "RobotoCondensed";
+    src: url("/src/font/RobotoCondensed-Regular.ttf") format("truetype");
+}
