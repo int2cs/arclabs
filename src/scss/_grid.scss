@@ -1,7 +1,20 @@
 $color1: #cea06c;
 $color2: #314356;
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap');
+@font-face {
+    font-family: "RobotoLight";
+    src: url("/src/font/Roboto-Light.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "RobotoCondensedLight";
+    src: url("/src/font/RobotoCondensed-Light.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "RobotoCondensed";
+    src: url("/src/font/RobotoCondensed-Regular.ttf") format("truetype");
+}
 
 * {
     font-family: 'Roboto', sans-serif;
