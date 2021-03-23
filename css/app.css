@@ -10,14 +10,6 @@ a {
   color: inherit;
 }
 
-ul {
-  list-style-type: none;
-}
-
-section {
-  padding: 50px 10px;
-}
-
 @font-face {
   font-family: "RobotoLight";
   src: url("/src/font/Roboto-Light.ttf") format("truetype");
@@ -33,12 +25,30 @@ section {
   src: url("/src/font/RobotoCondensed-Regular.ttf") format("truetype");
 }
 
+body {
+  max-width: 1080px;
+  margin: auto;
+  font-family: RobotoLight;
+}
+
+ul {
+  list-style-type: none;
+}
+
+section {
+  padding: 50px 10px;
+}
+
 #vh {
   position: relative;
   height: 100vh;
+<<<<<<< HEAD
   background: url(/src/img/header-bg.jpg);
   display: -webkit-box;
   display: -ms-flexbox;
+=======
+  background: center/cover url(/src/img/header-bg.jpg);
+>>>>>>> 5315f48f03c48966208f193a9d759e9af61259ef
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -107,6 +117,19 @@ section {
   height: 20px;
 }
 
+#section1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+@media (min-width: 992px) {
+  #section1 {
+    flex-direction: row;
+  }
+}
+
 #section1 .card {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -120,6 +143,12 @@ section {
           align-items: center;
   width: 80%;
   margin: 50px auto;
+}
+
+@media (min-width: 992px) {
+  #section1 .card {
+    margin: 50px 20px;
+  }
 }
 
 #section1 .card img {
@@ -143,13 +172,35 @@ section {
 }
 
 #section2 {
+  position: relative;
   background: #f1f1f1;
+}
+
+@media (min-width: 992px) {
+  #section2 {
+    display: flex;
+  }
+}
+
+#section2 .section2_content {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 992px) {
+  #section2 .section2_content {
+    padding: 30px;
+  }
 }
 
 #section2 img {
   display: block;
   width: 95%;
   margin: 0 auto 40px auto;
+}
+
+#section2 h2 {
+  text-transform: uppercase;
 }
 
 #section2 h3 {
@@ -167,6 +218,34 @@ section {
   padding: 0.5em 1.5em;
   border: 1px solid #cea06c;
   text-transform: capitalize;
+}
+
+@media (min-width: 992px) {
+  #section2 a {
+    position: absolute;
+    bottom: 150px;
+    right: 490px;
+  }
+}
+
+#section4 {
+  background: #f1f1f1;
+}
+
+#section4 .video {
+  color: white;
+  text-transform: capitalize;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  min-height: 300px;
+  background: center/cover url(/src/img/ct1.jpg);
+}
+
+#section4 .video img {
+  width: 35px;
 }
 
 .linkContainer {
