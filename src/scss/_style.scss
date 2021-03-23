@@ -1,7 +1,7 @@
 #vh {
   position: relative;
   height: 100vh;
-  background: url(/src/img/header-bg.jpg);
+  background: center/cover url(/src/img/header-bg.jpg);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -49,12 +49,23 @@
 }
 
 #section1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  @include lg {
+    flex-direction: row;
+  }
   .card {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 80%;
     margin: 50px auto;
+    @include lg {
+      margin: 50px 20px;
+    }
 
     img {
       width: 150px;
@@ -79,12 +90,27 @@
 }
 
 #section2 {
+  position: relative;
   background: $color-lightgrey;
+  @include lg {
+    display: flex;
+  }
+
+  .section2_content {
+    display: flex;
+    flex-direction: column;
+    @include lg {
+      padding: 30px;
+    }
+  }
 
   img {
     display: block;
     width: 95%;
     margin: 0 auto 40px auto;
+  }
+  h2 {
+    text-transform: uppercase;
   }
   h3 {
     color: $color1;
@@ -96,6 +122,11 @@
     margin-bottom: 50px;
   }
   a {
+    @include lg {
+      position: absolute;
+      bottom: 150px;
+      right: 490px;
+    }
     @include btn($color1);
   }
 }

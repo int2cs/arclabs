@@ -1,17 +1,4 @@
-ul {
-  list-style-type: none;
-}
-
-section {
-  padding: 50px 10px;
-}
-
-$color1: #cea06c;
-$color2: #314356;
-$color-grey: grey;
-$color-lightgrey: lightgrey;
-$color-lightgrey: rgb(241, 241, 241);
-
+/// FONTS ///
 @font-face {
   font-family: "RobotoLight";
   src: url("/src/font/Roboto-Light.ttf") format("truetype");
@@ -25,4 +12,25 @@ $color-lightgrey: rgb(241, 241, 241);
 @font-face {
   font-family: "RobotoCondensed";
   src: url("/src/font/RobotoCondensed-Regular.ttf") format("truetype");
+}
+
+/// VARIABLES ///
+$color1: #cea06c;
+$color2: #314356;
+$color-grey: grey;
+$color-lightgrey: lightgrey;
+$color-lightgrey: rgb(241, 241, 241);
+
+/// GLOBALS ///
+body {
+  max-width: 1080px;
+  margin: auto;
+  font-family: RobotoLight;
+}
+ul {
+  list-style-type: none;
+}
+
+section {
+  padding: 50px 10px;
 }
