@@ -1,37 +1,40 @@
-* {
-    font-family: 'Roboto', sans-serif;
-}
-
 .linkContainer {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     width: 100%;
+    p {
+        text-align: center;
+        color: $color2;
+        padding: 10px;
+        font-family: 'RobotoLight';
+        cursor: pointer;
+        
+        &:hover {
+            color: $color1;
+        }
+    }
 }
-
-.link {
-    text-align: center;
-    color: $color2;
-    padding: 10px;
-    font-weight: 300;
-    cursor: pointer;
-}
-
-.link:hover {
-    color: $color1;
-}
-
-#project h3 {
+.orangeTitle {
     text-align: center;
     color: $color1;
-    font-weight: 300;
+    font-family: 'RobotoCondensed';
 }
 
-#project h2 {
+.grayTitle {
     text-align: center;
     color: $color2;
     margin-top: 10px;
     margin-bottom: 30px;
     font-size: 35px;
-    font-weight: 500;
+    font-family: 'RobotoCondensed';
+}
+
+#projectGrid {
+    width: 100%;
+    height: 150px;
+    background-color: aqua;
+    @include md {
+        background-color: salmon;
+    }
 }
