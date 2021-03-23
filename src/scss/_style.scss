@@ -1,4 +1,10 @@
 #vh {
   height: 100vh;
   background: url(/src/img/header-bg.jpg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &_content {
+  }
 }
