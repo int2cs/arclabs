@@ -1,5 +1,13 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
 #vh {
   height: 100vh;
-  background: url();
+  background: url(/src/img/header-bg.jpg);
 }
 /*# sourceMappingURL=app.css.map */
