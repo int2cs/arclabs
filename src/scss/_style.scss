@@ -130,3 +130,23 @@
     @include btn($color1);
   }
 }
+
+#section4 {
+  background: $color-lightgrey;
+
+  .video {
+    color: white;
+    text-transform: capitalize;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    min-height: 300px;
+    background: center/cover url(/src/img/ct1.jpg);
+
+    img {
+      width: 35px;
+    }
+  }
+}
