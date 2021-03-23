@@ -1,29 +1,28 @@
-.btn {
-  padding: 0.5em 1.5em;
-  border: 1px solid white;
-}
 ul {
   list-style-type: none;
 }
 
 section {
-  margin: 50px 0;
+  padding: 50px 10px;
 }
 
 $color1: #cea06c;
 $color2: #314356;
+$color-grey: grey;
+$color-lightgrey: lightgrey;
+$color-lightgrey: rgb(241, 241, 241);
 
 @font-face {
-    font-family: "RobotoLight";
-    src: url("/src/font/Roboto-Light.ttf") format("truetype");
+  font-family: "RobotoLight";
+  src: url("/src/font/Roboto-Light.ttf") format("truetype");
 }
 
 @font-face {
-    font-family: "RobotoCondensedLight";
-    src: url("/src/font/RobotoCondensed-Light.ttf") format("truetype");
+  font-family: "RobotoCondensedLight";
+  src: url("/src/font/RobotoCondensed-Light.ttf") format("truetype");
 }
 
 @font-face {
-    font-family: "RobotoCondensed";
-    src: url("/src/font/RobotoCondensed-Regular.ttf") format("truetype");
+  font-family: "RobotoCondensed";
+  src: url("/src/font/RobotoCondensed-Regular.ttf") format("truetype");
 }
